@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#map:before{
+    position:absolute;
+    z-index: 1980;
+    content: 'Location:\A Plot 780,\A Liberty  Boulevard,\A beside Film \A Corporation, Jos,\A Plateau State\A Nigeria';
+    background: #fff;
+    width:150px;
+    left:0;
+    text-align: center;
+    font-weight: 400;
+    white-space: pre;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+.uk-navbar-nav>li>a:not(.uk-active){
+    color: #489e5e;
+}
+.uk-navbar-dropdown.uk-navbar-dropdown-bottom-left{
+    background-color: #00ff89;
+}
+
+.uk-navbar-dropdown.uk-navbar-dropdown-bottom-left a{
+    color: #fff;
+}
+
+@media screen and (max-width: 900px){
+    ul.responsive {
+        position: relative;
+    }
+    ul.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul#resNav{
+        display: block;
+        text-align: left;
+    }
+}
