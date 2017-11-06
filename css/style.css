@@ -6,7 +6,7 @@
 #map:before{
     position:absolute;
     z-index: 1980;
-    content: 'Location:\A Plot 780,\A Liberty  Boulevard,\A beside Film \A Corporation, Jos,\A Plateau State\A Nigeria';
+    content: 'Location:\A Plot 780,\A Liberty  Boulevard,\A beside Film \A Corporation, Jos,\A Plateau State\A Nigeria\A Phone:\A +2349025800090 ';
     background: #fff;
     width:150px;
     left:0;
@@ -41,4 +41,9 @@
         display: block;
         text-align: left;
     }
+}
+.cover{
+    object-fit: cover;
+    height:400px;
+    width:100%;
 }
