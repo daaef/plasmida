@@ -47,3 +47,16 @@
     height:400px;
     width:100%;
 }
+
+.black p{
+    color: #000!important;
+}
+.black{
+    height: 30px!important;
+}
+.green {
+    background-color: #59ffb2;
+}
+.padout .uk-card-body{
+    padding: 0!important;
+}
