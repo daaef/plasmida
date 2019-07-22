@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="uk-position-relative uk-visible-toggle green" uk-slideshow="animation: pull; autoplay: true;autoplay-interval: 4000">
+<div class="uk-position-relative uk-visible-toggle green"
+     uk-slideshow="animation: pull; autoplay: true;autoplay-interval: 4000">
 
     <ul class="black uk-slideshow-items uk-text-center">
         <li>
@@ -20,104 +21,117 @@
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+       uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+       uk-slideshow-item="next"></a>
 
 </div>
-    <nav uk-sticky="show-on-up: true; animation: uk-animation-slide-top;" style="background-color: #00ff89;" class="uk-margin-remove-top uk-navbar-container uk-container uk-container-expand uk-margin" uk-navbar>
-        <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="index.html"><img style="height:70px" class="uk-responsive-height" src="img/logo.png" alt=""></a>
-        </div>
-        <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav uk-visible@m" id="resNav">
-                <li class="uk-active"><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#">About Us</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li class="uk-active"><a href="#about" uk-scroll>Our Vision</a></li>
-                            <li><a href="#about" uk-scroll>Our Mission</a></li>
-                            <li><a href="#about" uk-scroll>Guiding Principles</a></li>
-                            <li class="uk-nav-header"><a href="#about" uk-scroll>Organizational Chart</a></li>
-                            <li><a href="#about" uk-scroll>Partners</a></li>
-                            <li><a href="#about" uk-scroll>Departments</a></li>
-                        </ul>
-                    </div>
+<nav uk-sticky="show-on-up: true; animation: uk-animation-slide-top;" style="background-color: #00ff89;"
+     class="uk-margin-remove-top uk-navbar-container uk-container uk-container-expand uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="index.html"><img style="height:70px" class="uk-responsive-height"
+                                                                 src="img/logo.png" alt=""></a>
+    </div>
+    <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav uk-visible@m" id="resNav">
+            <li class="uk-active"><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">About Us</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#about" uk-scroll>Our Vision</a></li>
+                        <li><a href="#about" uk-scroll>Our Mission</a></li>
+                        <li><a href="#about" uk-scroll>Guiding Principles</a></li>
+                        <li class="uk-nav-header"><a href="#about" uk-scroll>Organizational Chart</a></li>
+                        <li><a href="#about" uk-scroll>Partners</a></li>
+                        <li><a href="#about" uk-scroll>Departments</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#progs" uk-scroll>Programmes</a></li>
+            <li><a href="#contact" uk-scroll>Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle uk-position-center-right" uk-navbar-toggle-icon href="#"
+           uk-toggle="target: #offcanvas-nav-primary"></a>
+    </div>
+</nav>
+<div class="uk-offcanvas-content">
+    <div id="offcanvas-nav-primary" uk-offcanvas="mode: push">
+        <div style="background-color: #00ff89;" class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
                 </li>
-                <li><a href="#progs" uk-scroll>Programmes</a></li>
-                <li><a href="#contact" uk-scroll>Contact Us</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
             </ul>
         </div>
-        <div class="uk-navbar-right uk-hidden@m">
-            <a class="uk-navbar-toggle uk-position-center-right" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav-primary"></a>
-        </div>
-    </nav>
-    <div class="uk-offcanvas-content">
-        <div id="offcanvas-nav-primary" uk-offcanvas="mode: push">
-            <div style="background-color: #00ff89;" class="uk-offcanvas-bar uk-flex uk-flex-column">
-                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li class="uk-parent">
-                        <a href="#">Parent</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
-                </ul>
-            </div>
     </div>
     <div class="uk-container uk-container-small">
         <div uk-slideshow="animation: fade; autoplay: true">
 
-        <div class="uk-position-relative uk-visible-toggle uk-light">
+            <div class="uk-position-relative uk-visible-toggle uk-light">
 
-            <ul class="uk-slideshow-items">
-                <li>
-                    <img src="img/slider_1.jpg" alt="" uk-cover>
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h5 class="uk-margin-remove">Swearing-In Ceremony Of the Plateau State MSME Council @ The Government House, Rayfield,Jos</h5>
-                        <p class="uk-margin-remove">Right-To-Left: DG SMEDAN, SGS to the Plateau State Government and DG plasmeda</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slider_2.jpg" alt="" uk-cover>
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h5 class="uk-margin-remove">Group Photo of the members, MSME council after the Swearing-In Ceremony</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slider_3.jpg" alt="" uk-cover>
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h5 class="uk-margin-remove">DG SMEDAN and the SGS to the to the Plateau state Government, and other Dignitaries @ the MSME Council Swearing in Ceremony</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/slider_4.jpg" alt="" uk-cover>
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h5 class="uk-margin-remove">His Excellency,Rt. Hon. Simon Bako Lalong, Dg plasmeda, showcasing the first Made-In-Plateau Tractor to His Excellency, Vice President, Professor Yemi Osinbajo During the MSME Fair.</h5>
-                    </div>
-                </li>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="img/slider_1.jpg" alt="" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h5 class="uk-margin-remove">Swearing-In Ceremony Of the Plateau State MSME Council @ The
+                                Government House, Rayfield,Jos</h5>
+                            <p class="uk-margin-remove">Right-To-Left: DG SMEDAN, SGS to the Plateau State Government
+                                and DG plasmeda</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider_2.jpg" alt="" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h5 class="uk-margin-remove">Group Photo of the members, MSME council after the Swearing-In
+                                Ceremony</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider_3.jpg" alt="" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h5 class="uk-margin-remove">DG SMEDAN and the SGS to the to the Plateau state Government,
+                                and other Dignitaries @ the MSME Council Swearing in Ceremony</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/slider_4.jpg" alt="" uk-cover>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h5 class="uk-margin-remove">His Excellency,Rt. Hon. Simon Bako Lalong, Dg plasmeda,
+                                showcasing the first Made-In-Plateau Tractor to His Excellency, Vice President,
+                                Professor Yemi Osinbajo During the MSME Fair.</h5>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                   uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                   uk-slideshow-item="next"></a>
+
+            </div>
+
+            <ul class="uk-dotnav uk-flex-center uk-margin">
+                <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+                <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+                <li uk-slideshow-item="3"><a href="#">Item 3</a></li>
+                <li uk-slideshow-item="4"><a href="#">Item 4</a></li>
             </ul>
 
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
         </div>
-
-        <ul class="uk-dotnav uk-flex-center uk-margin">
-            <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
-            <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
-            <li uk-slideshow-item="3"><a href="#">Item 3</a></li>
-            <li uk-slideshow-item="4"><a href="#">Item 4</a></li>
-        </ul>
-
-    </div>
         <div id="about" class="uk-card uk-card-body uk-card-hover uk-section-muted">
             <h3 class="uk-card-title">About Us</h3>
             <ul uk-tab uk-switcher="animation: uk-animation-fade">
@@ -132,12 +146,14 @@
             <ul class="uk-switcher uk-margin">
                 <li uk-grid>
                     <p>
-                        To develop the capacity of Micro Small and Medium Enterprises in the state towards wealth creation, and poverty reduction.
+                        To develop the capacity of Micro Small and Medium Enterprises in the state towards wealth
+                        creation, and poverty reduction.
                     </p>
                 </li>
                 <li class="uk-child-width-expand@s" uk-grid>
                     <p>
-                        To be a world class Agency that is passionate and efficient in the promotion and development of Micro Small and Medium Enterprises.
+                        To be a world class Agency that is passionate and efficient in the promotion and development of
+                        Micro Small and Medium Enterprises.
                     </p>
                 </li>
                 <li>
@@ -152,25 +168,71 @@
                 <li>
                     <ul class="uk-list uk-list-striped">
                         <p>Subject to the provision of this Bill, PLASMEDA shall:-</p>
-                        <li>Initiate, support, and develop MSME’s  programmes and activities  in the state.</li>
-                        <li>Provide basic financial assistance through the Microfinance Banks operating in the State to micro entrepreneurs (MSME’s) who are involved in legitimate MSME’s activities in urban and rural areas but who may not be in the position to benefit from the services of the conventional banking system due to their inability to provide collateral or security.</li>
-                        <li>Supervise the activities of Microfinance Banks within the State PROVIDED that such Microfinance Banks have custody of, and or may have applied for loan or custody of PLASMEDA funds.</li>
-                        <li>Receive periodic reports from Microfinance Bank in the State with a view to ascertaining their performance on the fund disbursed to them by PLASMEDA as stated in (C) above.</li>
-                        <li>Establish and provide corporate governance and manage the Plateau State Microfinance Fund</li>
-                        <li>Attract people-oriented development projects and implement and coordinate programmes in the State for both Start-ups and existing enterprises.</li>
-                        <li>To monitor, ensure measureable improvements in the quality of life of entrepreneurs in the State by conducting impact assessment survey; measuring and conducting initial baseline studies.</li>
-                        <li>Ensure that value-added support services necessary to impact positively on the business of MSME’s are developed through education and confidence building programmes.</li>
-                        <li>Create an enabling environment that will enhance and facilitate access to Support services by Microfinance Banks operating within the  State through liaison with Federal Government institutions and other intervention Schemes.</li>
-                        <li>To provide MSME’s with liaison and linkage services and serve as the intermediary between the State Government, Local Government, International and Organized private sector and entities associated with the Microfinance activities.</li>
-                        <li>Device ways of promoting and facilitating access to funds to existing enterprises and Start-ups to enhance their growth and development.</li>
-                        <li>Device ways and processes of certain awareness among the users of Microfinance Banks services and expose them investment opportunities in business.</li>
-                        <li>Put in place deliberate platforms to facilitate Government intervention that would ensure that the disadvantaged categories of people in the State have access and direct benefit from Government interventions.</li>
-                        <li>To set targets and ensure rural dwellers participation and maximum benefit through access to Microfinance by sourcing for and distributing information through local languages, forms and other means.</li>
-                        <li>To source, initiate and coordinate bilateral or multilateral  technical assistance or partnership programmes with local and or international organizations and foundations with a view of benefiting from their expertise.</li>
-                        <li>To sensitize and mobilize State and Local Government employees and rural communities to form and register cooperative groups and various skills associations platforms so as to benefit from the available government intervention Programmes</li>
-                        <li>To serve as a reference point for potential investors in Microfinance Banks and other MSMEs’ development and intervention services.</li>
-                        <li>Guide, facilitate, and assist investors through the process of registration and procurement of operating instruments and shall ensure compliance with Rules and Regulations as may be issued by the Central Bank of Nigeria from time to time.</li>
-                        <li>Do such other things as are incidental or necessary to enhance PLASMEDA financial status, and enable it carry out any of the above functions.</li>
+                        <li>Initiate, support, and develop MSME’s programmes and activities in the state.</li>
+                        <li>Provide basic financial assistance through the Microfinance Banks operating in the State to
+                            micro entrepreneurs (MSME’s) who are involved in legitimate MSME’s activities in urban and
+                            rural areas but who may not be in the position to benefit from the services of the
+                            conventional banking system due to their inability to provide collateral or security.
+                        </li>
+                        <li>Supervise the activities of Microfinance Banks within the State PROVIDED that such
+                            Microfinance Banks have custody of, and or may have applied for loan or custody of PLASMEDA
+                            funds.
+                        </li>
+                        <li>Receive periodic reports from Microfinance Bank in the State with a view to ascertaining
+                            their performance on the fund disbursed to them by PLASMEDA as stated in (C) above.
+                        </li>
+                        <li>Establish and provide corporate governance and manage the Plateau State Microfinance Fund
+                        </li>
+                        <li>Attract people-oriented development projects and implement and coordinate programmes in the
+                            State for both Start-ups and existing enterprises.
+                        </li>
+                        <li>To monitor, ensure measureable improvements in the quality of life of entrepreneurs in the
+                            State by conducting impact assessment survey; measuring and conducting initial baseline
+                            studies.
+                        </li>
+                        <li>Ensure that value-added support services necessary to impact positively on the business of
+                            MSME’s are developed through education and confidence building programmes.
+                        </li>
+                        <li>Create an enabling environment that will enhance and facilitate access to Support services
+                            by Microfinance Banks operating within the State through liaison with Federal Government
+                            institutions and other intervention Schemes.
+                        </li>
+                        <li>To provide MSME’s with liaison and linkage services and serve as the intermediary between
+                            the State Government, Local Government, International and Organized private sector and
+                            entities associated with the Microfinance activities.
+                        </li>
+                        <li>Device ways of promoting and facilitating access to funds to existing enterprises and
+                            Start-ups to enhance their growth and development.
+                        </li>
+                        <li>Device ways and processes of certain awareness among the users of Microfinance Banks
+                            services and expose them investment opportunities in business.
+                        </li>
+                        <li>Put in place deliberate platforms to facilitate Government intervention that would ensure
+                            that the disadvantaged categories of people in the State have access and direct benefit from
+                            Government interventions.
+                        </li>
+                        <li>To set targets and ensure rural dwellers participation and maximum benefit through access to
+                            Microfinance by sourcing for and distributing information through local languages, forms and
+                            other means.
+                        </li>
+                        <li>To source, initiate and coordinate bilateral or multilateral technical assistance or
+                            partnership programmes with local and or international organizations and foundations with a
+                            view of benefiting from their expertise.
+                        </li>
+                        <li>To sensitize and mobilize State and Local Government employees and rural communities to form
+                            and register cooperative groups and various skills associations platforms so as to benefit
+                            from the available government intervention Programmes
+                        </li>
+                        <li>To serve as a reference point for potential investors in Microfinance Banks and other MSMEs’
+                            development and intervention services.
+                        </li>
+                        <li>Guide, facilitate, and assist investors through the process of registration and procurement
+                            of operating instruments and shall ensure compliance with Rules and Regulations as may be
+                            issued by the Central Bank of Nigeria from time to time.
+                        </li>
+                        <li>Do such other things as are incidental or necessary to enhance PLASMEDA financial status,
+                            and enable it carry out any of the above functions.
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -305,8 +367,10 @@
                     </li>
                 </ul>
 
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                   uk-slider-item="next"></a>
 
             </div>
 
@@ -325,9 +389,16 @@
         </div>
         <div id="contact" class="uk-card uk-card-body uk-card-hover uk-section-muted">
             <h3 class="uk-card-title">Contact Us</h3>
-            <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-            <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
-            <a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+            <div class="uk-width-1-1@l uk-flex uk-flex-between">
+                <div>
+                    <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                    <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook"></a>
+                    <a href="" class="uk-icon-button" uk-icon="icon: google-plus"></a>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <a href="mailto: plasmida.plagov@gmail.com" class="uk-link-reset uk-margin-small-right">email: plasmida.plagov@gmail.com </a>
+                </div>
+            </div>
             <h4>Location</h4>
             <div id="map"></div>
             <script>
